@@ -1,0 +1,67 @@
+##############################################################################
+#                           Franchise Collections                            #
+#                 Created by Yozora, Bullmoose20, & Sohjiro                  #
+#              Additional contributions by the Kometa Community              #
+#          EDITING THIS FILE MAY CAUSE PULLING NEW UPDATES TO FAIL           #
+#           https://kometa.wiki/en/latest/defaults/show/franchise            #
+##############################################################################
+
+templates:
+  tmdbshow:
+    default:
+      sync_mode: sync
+      sync_mode_<<key>>: <<sync_mode>>
+      collection_order: release
+      minimum_items: 2
+      name_mapping_<<key>>: <<name_mapping>>
+      pre: "_"
+      order_<<key>>: ""
+      sort_title: "!<<collection_section>><<pre>><<order_<<key>>>><<title>>"
+      sort_title_<<key>>: <<sort_title>>
+      sonarr_add_missing_<<key>>: <<sonarr_add_missing>>
+      sonarr_folder_<<key>>: <<sonarr_folder>>
+      sonarr_tag_<<key>>: <<sonarr_tag>>
+      item_sonarr_tag_<<key>>: <<item_sonarr_tag>>
+      sonarr_monitor_<<key>>: <<sonarr_monitor>>
+      collection_order_<<key>>: <<collection_order>>
+      url_poster_<<key>>: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/franchise/<<key_name_encoded>>.jpg
+    optional:
+      - name_<<key>>
+      - summary_<<key>>
+      - name_mapping
+      - sort_title
+      - build_collection
+      - collection_mode
+      - collection_order
+      - collection_section
+      - sonarr_add_missing
+      - sonarr_folder
+      - sonarr_tag
+      - item_sonarr_tag
+      - sonarr_monitor
+    name: <<name_<<key>>>>
+    summary: <<summary_<<key>>>>
+    minimum_items: <<minimum_items>>
+    tmdb_show: <<value>>
+    url_poster: <<url_poster_<<key>>>>
+    name_mapping: <<name_mapping_<<key>>>>
+    sort_title: <<sort_title_<<key>>>>
+    build_collection: <<build_collection>>
+    sync_mode: <<sync_mode_<<key>>>>
+    collection_mode: <<collection_mode>>
+    collection_order: <<collection_order_<<key>>>>
+    sonarr_add_missing: <<sonarr_add_missing_<<key>>>>
+    sonarr_folder: <<sonarr_folder_<<key>>>>
+    sonarr_tag: <<sonarr_tag_<<key>>>>
+    item_sonarr_tag: <<item_sonarr_tag_<<key>>>>
+    sonarr_monitor: <<sonarr_monitor_<<key>>>>
+
+dynamic_collections:
+  Show Franchise Collections:
+    type: custom
+    data:
+      "1412": Arrowverse
+    template:
+      - tmdbshow
+    addons:
+      1412: [60735, 60743, 62688, 62643, 71663, 89247, 80986, 95057]  # Arrow: The Flash, Constantine, Supergirl, Legends of Tomorrow, Black Lightning, Batwoman

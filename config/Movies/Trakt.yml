@@ -1,0 +1,7 @@
+collections:
+  Arrowverse:
+    trakt_list:
+      - https://trakt.tv/users/yasve/lists/arrowverse-order?sort=released,desc
+    sync_mode: sync
+    smart_filter:
+      sort_by: episode_release.asc

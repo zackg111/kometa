@@ -1,0 +1,146 @@
+#############################################################
+#                      Main Collections                     #
+#############################################################
+templates:
+  Title:
+    file_poster: /config/assets/plex/Collections/<<collection_name>>.jpg
+    sort_title: "!107_<<collection_name>>"
+    collection_order: release
+    sync_mode: sync
+collections:
+  Basketball Collection:
+    template:
+      name: Title
+    imdb_list:
+      list_id: ls020800918
+      limit: 150
+      sort_title: "!106_<<collection_name>>"
+      sync_by: rating.asc
+  True Crime Documentaries:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/true-crime-documentaries?sort=rank,asc
+    sync_mode: sync
+  Dragonball Z:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/jackfalveyiv/lists/dragon-ball?sort=released,asc
+    sync_mode: sync
+  Get Blazed:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/kayaaron13/lists/stoner-movies?sort=rank,asc
+    sync_mode: sync
+  Disney Channel Original Movies:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/megan_html/lists/disney-channel-original-movies-dcom-complete-list?sort=rank,asc
+    file_poster: /config/assets/plex/Collections/DCOM/poster.png
+    sync_mode: sync
+  Walt Disney Animation Studios:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/addvariety/lists/the-complete-walt-disney-animation-studios-collection?sort=released,asc
+    sync_mode: sync
+  Disney Live-Action Remakes:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/drjenkins/lists/disney-live-action-remakes?sort=released,desc
+    sync_mode: sync
+  Pixar Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/draackje/lists/pixar-feature-films?sort=released,desc
+    sync_mode: sync
+  Pixar Shorts Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/addvariety/lists/pixar-shorts-collection?sort=released,asc
+    sync_mode: sync
+  Marvel Cinematic Universe:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    sync_mode: sync
+  Wizarding World of Harry Potter:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/sflix/lists/the-wizarding-world?sort=released,asc
+    sync_mode: sync
+  Star Wars The Complete Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/haiderales/lists/star-wars-collection?sort=rank,asc
+    sync_mode: sync
+  Dreamworks Animation:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/draackje/lists/dreamworks-feature-films?sort=released,desc
+    sync_mode: sync
+  Illumination Entertainment Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/agrotika1980/lists/illumination-movies?sort=released,desc
+    sync_mode: sync
+  Illumination Shorts Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/f1nchy/lists/illumination-shorts?sort=title,asc
+    sync_mode: sync
+  Blue Sky Studios:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/donxy/lists/blue-sky-studios?sort=released,desc
+    sync_mode: sync
+  Dr. Seuss Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/ravensorb/lists/dr-seuss-collection?sort=released,desc
+    file_poster: /config/assets/plex/Collections/Dr Seuss/poster.png
+    sync_mode: sync
+  Top 100 Sports Movies:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/bbrodka1963/lists/top-100-sport-movies-english?sort=rank,asc
+    sync_mode: sync
+  Sony Pictures Animation:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/haiderales/lists/sony-pictures-animation?sort=rank,desc
+    sync_mode: sync
+  Disney Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/sparklindiamond/lists/ultimate-list-of-disney-movies?sort=title,asc
+    sync_mode: sync
+  Mind-Bending:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/mindfuck?sort=popularity,asc
+    sync_mode: sync
+  John Wayne Collection:
+    template:
+      name: Title
+    trakt_list:
+      - https://trakt.tv/users/dcteag/lists/john-wayne-movies?sort=released,desc
+    sync_mode: sync

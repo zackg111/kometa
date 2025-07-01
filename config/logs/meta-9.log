@@ -1,0 +1,117 @@
+[2025-07-01 09:23:05,782] [kometa.py:299]             [INFO]     |====================================================================================================|
+[2025-07-01 09:23:05,782] [kometa.py:300]             [INFO]     |                                                                                                    |
+[2025-07-01 09:23:05,782] [kometa.py:301]             [INFO]     |                   __  ___  ______    ___  ___   _______  __________    ___                         |
+[2025-07-01 09:23:05,782] [kometa.py:302]             [INFO]     |                  |  |/  / /  __  \  |   \/   | |   ____||          |  /   \                        |
+[2025-07-01 09:23:05,782] [kometa.py:303]             [INFO]     |                  |  '  / |  |  |  | |  \  /  | |  |__   `---|  |---` /  ^  \                       |
+[2025-07-01 09:23:05,782] [kometa.py:304]             [INFO]     |                  |    <  |  |  |  | |  |\/|  | |   __|      |  |    /  /_\  \                      |
+[2025-07-01 09:23:05,782] [kometa.py:305]             [INFO]     |                  |  .  \ |  `--`  | |  |  |  | |  |____     |  |   /  _____  \                     |
+[2025-07-01 09:23:05,782] [kometa.py:306]             [INFO]     |                  |__|\__\ \______/  |__|  |__| |_______|    |__|  /__/     \__\                    |
+[2025-07-01 09:23:05,782] [kometa.py:307]             [INFO]     |                                                                                                    |
+[2025-07-01 09:23:05,795] [kometa.py:313]             [INFO]     |     Version: 2.2.0 (Python 3.13.2) (Git: master)                                                   |
+[2025-07-01 09:25:26,569] [kometa.py:470]             [DEBUG]    | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn |
+                                                                 |     sock = connection.create_connection(                                                           |
+                                                                 |         (self._dns_host, self.port),                                                               |
+                                                                 |     ...<2 lines>...                                                                                |
+                                                                 |         socket_options=self.socket_options,                                                        |
+                                                                 |     )                                                                                              |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection |
+                                                                 |     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):                         |
+                                                                 |                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                          |
+                                                                 |   File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 977, in getaddrinfo |
+                                                                 |     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):                        |
+                                                                 |                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                         |
+                                                                 | socket.gaierror: [Errno 8] nodename nor servname provided, or not known                            |
+                                                                 |                                                                                                    |
+                                                                 | The above exception was the direct cause of the following exception:                               |
+                                                                 |                                                                                                    |
+                                                                 | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen |
+                                                                 |     response = self._make_request(                                                                 |
+                                                                 |         conn,                                                                                      |
+                                                                 |     ...<10 lines>...                                                                               |
+                                                                 |         **response_kw,                                                                             |
+                                                                 |     )                                                                                              |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request |
+                                                                 |     raise new_e                                                                                    |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request |
+                                                                 |     self._validate_conn(conn)                                                                      |
+                                                                 |     ~~~~~~~~~~~~~~~~~~~^^^^^^                                                                      |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn |
+                                                                 |     conn.connect()                                                                                 |
+                                                                 |     ~~~~~~~~~~~~^^                                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect |
+                                                                 |     self.sock = sock = self._new_conn()                                                            |
+                                                                 |                        ~~~~~~~~~~~~~~^^                                                            |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn |
+                                                                 |     raise NameResolutionError(self.host, self, e) from e                                           |
+                                                                 | urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x105517c50>: Failed to resolve 'raw.githubusercontent.com' ([Errno 8] nodename nor servname provided, or not known) |
+                                                                 |                                                                                                    |
+                                                                 | The above exception was the direct cause of the following exception:                               |
+                                                                 |                                                                                                    |
+                                                                 | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/requests/adapters.py", line 667, in send |
+                                                                 |     resp = conn.urlopen(                                                                           |
+                                                                 |         method=request.method,                                                                     |
+                                                                 |     ...<9 lines>...                                                                                |
+                                                                 |         chunked=chunked,                                                                           |
+                                                                 |     )                                                                                              |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen |
+                                                                 |     retries = retries.increment(                                                                   |
+                                                                 |         method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]                        |
+                                                                 |     )                                                                                              |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment |
+                                                                 |     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]                  |
+                                                                 |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                            |
+                                                                 | urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(redacted): Max retries exceeded with url: /Kometa-Team/Kometa/master/VERSION (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105517c50>: Failed to resolve 'raw.githubusercontent.com' ([Errno 8] nodename nor servname provided, or not known)")) |
+                                                                 |                                                                                                    |
+                                                                 | During handling of the above exception, another exception occurred:                                |
+                                                                 |                                                                                                    |
+                                                                 | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/tenacity/__init__.py", line 478, in __call__ |
+                                                                 |     result = fn(*args, **kwargs)                                                                   |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/modules/request.py", line 161, in get                        |
+                                                                 |     return self.session.get(url, json=json, headers=get_header(headers, header, language), params=params) |
+                                                                 |            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/requests/sessions.py", line 602, in get |
+                                                                 |     return self.request("GET", url, **kwargs)                                                      |
+                                                                 |            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^                                                      |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request |
+                                                                 |     resp = self.send(prep, **send_kwargs)                                                          |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa.py", line 239, in new_send                            |
+                                                                 |     return old_send(*send_args, **kwargs)                                                          |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send |
+                                                                 |     r = adapter.send(request, **kwargs)                                                            |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/requests/adapters.py", line 700, in send |
+                                                                 |     raise ConnectionError(e, request=request)                                                      |
+                                                                 | requests.exceptions.ConnectionError: HTTPSConnectionPool(redacted): Max retries exceeded with url: /Kometa-Team/Kometa/master/VERSION (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105517c50>: Failed to resolve 'raw.githubusercontent.com' ([Errno 8] nodename nor servname provided, or not known)")) |
+                                                                 |                                                                                                    |
+                                                                 | The above exception was the direct cause of the following exception:                               |
+                                                                 |                                                                                                    |
+                                                                 | Traceback (most recent call last):                                                                 |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa.py", line 314, in start                               |
+                                                                 |     if my_requests.newest:                                                                         |
+                                                                 |        ^^^^^^^^^^^^^^^^^^                                                                          |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/modules/request.py", line 218, in newest                     |
+                                                                 |     self._newest = self.latest if self.latest and (self.local.main != self.latest.main or (self.local.build and self.local.build < self.latest.build)) else None |
+                                                                 |                                   ^^^^^^^^^^^                                                      |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/modules/request.py", line 212, in latest                     |
+                                                                 |     self._latest = self.master                                                                     |
+                                                                 |                    ^^^^^^^^^^^                                                                     |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/modules/request.py", line 224, in master                     |
+                                                                 |     self._master = self._version("master")                                                         |
+                                                                 |                    ~~~~~~~~~~~~~^^^^^^^^^^                                                         |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/modules/request.py", line 242, in _version                   |
+                                                                 |     return Version(self.get(url).content.decode().strip())                                         |
+                                                                 |                    ~~~~~~~~^^^^^                                                                   |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/tenacity/__init__.py", line 336, in wrapped_f |
+                                                                 |     return copy(f, *args, **kw)                                                                    |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/tenacity/__init__.py", line 475, in __call__ |
+                                                                 |     do = self.iter(retry_state=retry_state)                                                        |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/tenacity/__init__.py", line 376, in iter |
+                                                                 |     result = action(retry_state)                                                                   |
+                                                                 |   File "/Volumes/MacOS/Servers/Kometa/kometa-venv/lib/python3.13/site-packages/tenacity/__init__.py", line 419, in exc_check |
+                                                                 |     raise retry_exc from fut.exception()                                                           |
+                                                                 | tenacity.RetryError: RetryError[<Future at 0x1054ce9f0 state=finished raised ConnectionError>]     |
+                                                                 |                                                                                                    |
+[2025-07-01 09:25:26,574] [kometa.py:471]             [CRITICAL] | RetryError[<Future at 0x1054ce9f0 state=finished raised ConnectionError>]                          |
